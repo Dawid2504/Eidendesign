@@ -805,26 +805,6 @@
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm" action="#" method="post">
-                    <h3 class="form-title">Projektanfrage</h3>
-
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">E-Mail *</label>
-                        <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Nachricht *</label>
-                        <textarea id="message" name="message" placeholder="Worum geht es?" required></textarea>
-                    </div>
-
-                    <button class="btn" type="submit">Anfrage senden <span>→</span></button>
-                </form>
             </div>
         </section>
 
@@ -879,10 +859,6 @@
 
         document.getElementById("year").textContent = new Date().getFullYear();
 
-        document.getElementById("contactForm").addEventListener("submit", (event) => {
-            event.preventDefault();
-            alert("Das Kontaktformular ist aktuell nur als Frontend vorbereitet. Für den Live-Betrieb muss noch ein Mail-Backend angeschlossen werden.");
-        });
     </script>
 </body>
 </html>
