@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Eiden Design – individuelle Möbel, Metallbau und maßgefertigte Designlösungen aus Stolberg.">
     <title>Eiden Design | Handwerk · Gestaltung · Qualität</title>
+    <link rel="icon" type="image/jpeg" href="images/eidendesign-mark.jpg">
 
     <style>
         :root {
@@ -160,6 +161,19 @@
             font-weight: 900;
             letter-spacing: 0.12em;
             text-transform: uppercase;
+        }
+
+        .logo-image {
+            display: block;
+            width: auto;
+            height: 46px;
+        }
+
+        .logo-image-mark {
+            display: none;
+            width: 42px;
+            height: 42px;
+            object-fit: cover;
         }
 
         .logo-mark {
@@ -613,6 +627,8 @@
         @media (max-width: 720px) {
             .container { width: min(calc(100% - 32px), var(--max)); }
             .navbar { min-height: 68px; }
+            .logo-image-full { display: none; }
+            .logo-image-mark { display: block; }
             .menu-button { display: block; }
 
             .nav-links {
@@ -661,8 +677,8 @@
     <header class="site-header">
         <div class="container navbar">
             <a href="#home" class="logo" aria-label="Eiden Design Startseite">
-                <span class="logo-mark">E</span>
-                <span>Eiden Design</span>
+                <img class="logo-image logo-image-full" src="images/eidendesign-logo.jpg" alt="Eidendesign – Möbel · Accessoires · Metallbau">
+                <img class="logo-image logo-image-mark" src="images/eidendesign-mark.jpg" alt="" aria-hidden="true">
             </a>
 
             <nav aria-label="Hauptnavigation">
@@ -696,10 +712,8 @@
                     </div>
                 </div>
 
-                <div class="hero-image" aria-label="Platzhalter für ein großformatiges Referenzprojekt">
-                    <div class="image-placeholder">
-                        <span>Großes Referenzbild</span>
-                    </div>
+                <div class="hero-image" aria-label="Schweißarbeiten bei Eiden Design">
+                    <img src="images/startbild.jpg" alt="Schweißarbeiten bei Eiden Design">
                 </div>
             </div>
         </section>
